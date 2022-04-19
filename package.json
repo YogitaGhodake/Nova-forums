@@ -1,14 +1,16 @@
 {
-  "name": "stackoverflowclone",
+  "name": "forums",
   "version": "1.0.0",
-  "description": "StackOverflow clone with it's main functionalities",
+  "description": "Social platform as Q & A for evryone",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server",
-    "server": "node server"
+    "server": "node server",
+    "client":"npm start --prefix client",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "Mayank Aggarwal",
-  "license": "MIT",
+  "author": "Yogita Ghodake",
+  "license": "YUG",
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
