@@ -17,7 +17,7 @@ const getUsers = (req, res) => {
           console.log(err);
           return res.status(err.code).json(err);
         }
-        return res.status(data.code).json(data);
+        return res.status(data.code).json({id:1212, name:"hello"});
       },
     );
   } catch (err) {
