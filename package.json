@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Social platform as Q & A for evryone",
   "main": "server.js",
+
   "scripts": {
     "start": "nodemon server",
     "server": "node server",
